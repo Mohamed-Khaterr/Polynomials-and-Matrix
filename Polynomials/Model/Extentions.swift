@@ -10,6 +10,7 @@ import UIKit
 
 
 extension UITextField{
+    
     func wiggleTheButton() {
         let wiggleAnim = CABasicAnimation(keyPath: "position")
         wiggleAnim.duration = 0.05
@@ -18,5 +19,18 @@ extension UITextField{
         wiggleAnim.fromValue = CGPoint(x: self.center.x - 4.0, y: self.center.y)
         wiggleAnim.toValue = CGPoint(x: self.center.x + 4.0, y: self.center.y)
         layer.add(wiggleAnim, forKey: "position")
+    }
+}
+
+//buttons with corners
+extension UIButton{
+    
+    func cornerByTwo(){
+        self.layer.cornerRadius = self.frame.size.height/2
+    }
+    
+    
+    func cornerByThree(){
+        self.layer.cornerRadius = self.frame.size.height/3
     }
 }

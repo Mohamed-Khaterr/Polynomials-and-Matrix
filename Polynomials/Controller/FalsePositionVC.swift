@@ -34,12 +34,12 @@ class FalsePositionVC: UIViewController {
         // Do any additional setup after loading the view.
         
         //make buttons with corners
-        cleatButton.layer.cornerRadius = cleatButton.frame.size.height/3
-        powButton.layer.cornerRadius = powButton.frame.size.height/3
-        calculateButton.layer.cornerRadius = calculateButton.frame.size.height/3
-        plusButton.layer.cornerRadius = plusButton.frame.size.height/3
-        multiplicationButton.layer.cornerRadius = multiplicationButton.frame.size.height/3
-        bigXButton.layer.cornerRadius = bigXButton.frame.size.height/3
+        cleatButton.cornerByThree()
+        powButton.cornerByThree()
+        calculateButton.cornerByThree()
+        plusButton.cornerByThree()
+        multiplicationButton.cornerByThree()
+        bigXButton.cornerByThree()
         
         //This to Add dot to number pad
         functionTextField.keyboardType = .decimalPad

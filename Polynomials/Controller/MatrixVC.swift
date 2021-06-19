@@ -19,9 +19,9 @@ class MatrixVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        gaussButton.layer.cornerRadius = gaussButton.frame.size.height/2
-        luButton.layer.cornerRadius = luButton.frame.size.height/2
-        cramerButton.layer.cornerRadius = cramerButton.frame.size.height/2
+        gaussButton.cornerByTwo()
+        luButton.cornerByTwo()
+        cramerButton.cornerByTwo()
     }
     
     @IBAction func buttonPresses(_ sender: UIButton) {

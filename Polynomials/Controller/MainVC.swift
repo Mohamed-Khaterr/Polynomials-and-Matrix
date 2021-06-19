@@ -20,12 +20,12 @@ class MainVC: UIViewController {
         super.viewDidLoad()
 
         //make buttons with corners
-        bisectionButton.layer.cornerRadius = bisectionButton.frame.size.height/2
-        falesButton.layer.cornerRadius = falesButton.frame.size.height/2
-        simpleFixedButton.layer.cornerRadius = simpleFixedButton.frame.size.height/2
-        newtonButton.layer.cornerRadius = newtonButton.frame.size.height/2
-        secantButton.layer.cornerRadius = secantButton.frame.size.height/2
-        matrixButton.layer.cornerRadius = matrixButton.frame.size.height/2
+        bisectionButton.cornerByTwo()
+        falesButton.cornerByTwo()
+        simpleFixedButton.cornerByTwo()
+        newtonButton.cornerByTwo()
+        secantButton.cornerByTwo()
+        matrixButton.cornerByTwo()
         
     }
     

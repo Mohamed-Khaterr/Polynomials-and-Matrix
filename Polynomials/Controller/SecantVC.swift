@@ -30,12 +30,12 @@ class SecantVC: UIViewController {
         super.viewDidLoad()
 
         //make buttons with corners
-        clearButton.layer.cornerRadius = clearButton.frame.size.height/3
-        powButton.layer.cornerRadius = powButton.frame.size.height/3
-        calculateButton.layer.cornerRadius = calculateButton.frame.size.height/3
-        plusButton.layer.cornerRadius = plusButton.frame.size.height/3
-        minusButton.layer.cornerRadius = minusButton.frame.size.height/3
-        bigXButton.layer.cornerRadius = bigXButton.frame.size.height/3
+        clearButton.cornerByThree()
+        powButton.cornerByThree()
+        calculateButton.cornerByThree()
+        plusButton.cornerByThree()
+        minusButton.cornerByThree()
+        bigXButton.cornerByThree()
     }
     
     //This func To Disaper the keyboard
