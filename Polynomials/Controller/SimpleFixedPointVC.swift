@@ -82,27 +82,42 @@ class SimpleFixedPointVC: UIViewController {
         let xo = Double(xoTextField.text!)
         
         if let fun = fxTextField.text {
+            
             if xo != nil {
+                
                 if eps != nil {
+                    
                     poly.simpleFixedPoint(x: xo!, eps: eps!, fun: fun)
+                    
                     self.performSegue(withIdentifier: "goToResult", sender: self)
                     poly.setReset()
+                    
                 }else if iter != nil{
+                    
                     poly.simpleFixedPointWithIter(x: xo!, iter: iter!, fun: fun)
+                    
                     self.performSegue(withIdentifier: "goToResult", sender: self)
                     poly.setReset()
+                    
                 }
             }
         }
+        
+        
         if fxTextField.text == ""{
+            
             fxTextField.placeholder = "Enter F(x)"
             fxTextField.wiggleTheButton()
         }
+        
         if xo == nil{
+            
             xoTextField.placeholder = "Enter Xo"
             xoTextField.wiggleTheButton()
         }
+        
         if eps == nil && iter == nil{
+            
             epsTextField.placeholder = "Enter eps"
             epsTextField.wiggleTheButton()
             iterTextField.placeholder = "Enter iter"

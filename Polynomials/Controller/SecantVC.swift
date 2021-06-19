@@ -83,31 +83,44 @@ class SecantVC: UIViewController {
         
         
         if let fun = fxTextField.text {
+            
             if xo != nil && xMinus != nil{
+                
                 if eps != nil {
+                    
                     poly.secant(xo: xo!, xMinus: xMinus!, eps: eps!, fun: fun)
+                    
                     self.performSegue(withIdentifier: "goToResult", sender: self)
                     poly.setReset()
+                    
                 }else if iter != nil{
+                    
                     poly.secantWithIter(xo: xo!, xMinus: xMinus!, iter: iter!, fun: fun)
                     self.performSegue(withIdentifier: "goToResult", sender: self)
                     poly.setReset()
                 }
             }
         }
+        
         if fxTextField.text == ""{
+            
             fxTextField.placeholder = "Enter ƒ(x)"
             fxTextField.wiggleTheButton()
         }
+        
         if xMinusTextField.text == ""{
+            
             xMinusTextField.placeholder = "Enter X-1"
             xMinusTextField.wiggleTheButton()
         }
+        
         if xo == nil{
+            
             xoTextField.placeholder = "Enter Xo"
             xoTextField.wiggleTheButton()
         }
         if eps == nil && iter == nil{
+            
             epsTextField.placeholder = "Enter eps"
             epsTextField.wiggleTheButton()
             iterTextField.placeholder = "Enter iter"

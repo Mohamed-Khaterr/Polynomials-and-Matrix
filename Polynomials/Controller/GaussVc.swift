@@ -67,6 +67,7 @@ class GaussVc: UIViewController {
         if matrix.check(a11: a11, a12: a12, a13: a13, a14: a14, a21: a21, a22: a22, a23: a23, a24: a24, a31: a31, a32: a32, a33: a33, a34: a34){
             
             matrix.gauss(a11: a11!, a12: a12!, a13: a13!, a14: a14!, a21: a21!, a22: a22!, a23: a23!, a24: a24!, a31: a31!, a32: a32!, a33: a33!, a34: a34!)
+            
             self.performSegue(withIdentifier: "goToResult", sender: self)
             matrix.setReset()
             

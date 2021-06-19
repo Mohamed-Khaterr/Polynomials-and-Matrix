@@ -59,6 +59,7 @@ class FalsePositionVC: UIViewController {
     }
 
     @IBAction func buttonsPressed(_ sender: UIButton) {
+        
         if let safeSender = sender.currentTitle{
             switch safeSender {
                 case "X":
@@ -76,6 +77,7 @@ class FalsePositionVC: UIViewController {
     }
     
     @IBAction func clearButtonPressd(_ sender: UIButton) {
+        
         functionTextField.text = ""
         xlTextField.text = ""
         xuTextField.text = ""
@@ -93,27 +95,48 @@ class FalsePositionVC: UIViewController {
         //func = X^4 - 8X^3 - 35X^2 + 450X - 1001
         
         if let fun = functionTextField.text {
+            
             if poly.check(fun: fun, xl: xl, xu: xu, iter: iter, eps: eps){
+                
                 if eps != nil{
+                    
                     poly.falsePosition(xl: xl!, xu: xu!, eps: eps!, fun: fun)
+                    
                 }else{
+                    
                     poly.falsePositionIteration(xl: xl!, xu: xu!, iter: iter!, fun: fun)
                 }
+                
                 self.performSegue(withIdentifier: "goToResult", sender: self)
                 poly.setReset()
                 
             }else{
+                
                 if fun == ""{
+                    
                     functionTextField.placeholder = "Enter function"
                     functionTextField.wiggleTheButton()
                 }
+                
                 if xl == nil {
+                    
                     xlTextField.placeholder = "Enter XL"
                     xlTextField.wiggleTheButton()
                 }
+                
                 if xu == nil{
+                
                     xuTextField.placeholder = "Enter XU"
                     xuTextField.wiggleTheButton()
+                }
+                
+                if eps == nil && iter == nil  {
+                
+                    iterationTextField.placeholder = "Enter iter"
+                    iterationTextField.wiggleTheButton()
+                
+                    epsTextField.placeholder = "Enter eps"
+                    epsTextField.wiggleTheButton()
                 }
             }
         }

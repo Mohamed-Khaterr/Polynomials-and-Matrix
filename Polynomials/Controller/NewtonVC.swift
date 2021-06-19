@@ -83,20 +83,29 @@ class NewtonVC: UIViewController {
         
         
         if let fun = fxTextField.text {
+            
             if let fDash = fDashTextField.text{
+                
                 if xo != nil{
+                    
                     if eps != nil {
+                        
                         poly.newton(x: xo!, eps: eps!, funDash: fDash, fun: fun)
+                        
                         self.performSegue(withIdentifier: "goToResult", sender: self)
                         poly.setReset()
+                        
                     }else if iter != nil{
+                        
                         poly.newtonWithIter(x: xo!, iter: iter!, funDash: fDash, fun: fun)
+                        
                         self.performSegue(withIdentifier: "goToResult", sender: self)
                         poly.setReset()
                     }
                 }
             }
         }
+        
         if fxTextField.text == ""{
             fxTextField.placeholder = "Enter F(x)"
             fxTextField.wiggleTheButton()

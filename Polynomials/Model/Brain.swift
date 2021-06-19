@@ -27,13 +27,13 @@ class Polynomials{
     }
     
     func check(fun: String, xl: Double?, xu: Double?, iter: Int?, eps: Double?) -> Bool {
-        if fun != "" && xu != nil && xl != nil{
-            if iter != nil || eps != nil{
-                return true
-            }else{
-                return false
-            }
+        
+        if fun != "" && xu != nil && xl != nil && (iter != nil || eps != nil){
+                
+            return true
+            
         }else{
+            
             return false
         }
     }

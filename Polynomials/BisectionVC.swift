@@ -89,15 +89,23 @@ class BisectionVC: UIViewController {
         let iter = Int(iterationTextField.text!)
         let eps = Double(epsTextField.text!)
         
+        
         //func = X^4 - 8X^3 - 35X^2 + 450X - 1001
         
         if let fun = functionTextField.text {
+            
             if poly.check(fun: fun, xl: xl, xu: xu, iter: iter, eps: eps){
+                
                 if eps != nil{
+                    
                     poly.bisection(xl: xl!, xu: xu!, eps: eps!, fun: fun)
+                    
                 }else{
+                    
                     poly.bisectionWithIteration(xl: xl!, xu: xu!, iter: iter!, fun: fun)
+                    
                 }
+                
                 self.performSegue(withIdentifier: "goToResult", sender: self)
                 poly.setReset()
                 
@@ -106,15 +114,28 @@ class BisectionVC: UIViewController {
                     functionTextField.placeholder = "Enter function"
                     functionTextField.wiggleTheButton()
                 }
+                
                 if xl == nil {
                     xlTextField.placeholder = "Enter XL"
                     xlTextField.wiggleTheButton()
                 }
+                
                 if xu == nil{
                     xuTextField.placeholder = "Enter XU"
                     xuTextField.wiggleTheButton()
                 }
+                
+                if eps == nil && iter == nil  {
+                    iterationTextField.placeholder = "Enter iter"
+                    iterationTextField.wiggleTheButton()
+                
+                    epsTextField.placeholder = "Enter eps"
+                    epsTextField.wiggleTheButton()
+                }
+                
             }
+            
+            
         }
     }
     

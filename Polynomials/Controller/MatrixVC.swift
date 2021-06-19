@@ -25,13 +25,18 @@ class MatrixVC: UIViewController {
     }
     
     @IBAction func buttonPresses(_ sender: UIButton) {
+        
         switch sender.currentTitle {
+            
         case "Gauss":
             self.performSegue(withIdentifier: "goToGauss", sender: self)
+            
         case "LU":
             self.performSegue(withIdentifier: "goToLU", sender: self)
+            
         case "Cramer's":
             self.performSegue(withIdentifier: "goToCramer", sender: self)
+            
         default:
             print("Error")
         }
