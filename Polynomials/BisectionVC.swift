@@ -94,9 +94,9 @@ class BisectionVC: UIViewController {
         if let fun = functionTextField.text {
             if poly.check(fun: fun, xl: xl, xu: xu, iter: iter, eps: eps){
                 if eps != nil{
-                    poly.bisection(xl: xl!, xu: xu!, eps: eps!, fun: " \(fun) ")
+                    poly.bisection(xl: xl!, xu: xu!, eps: eps!, fun: fun)
                 }else{
-                    poly.bisectionWithIteration(xl: xl!, xu: xu!, iter: iter!, fun: " \(fun) ")
+                    poly.bisectionWithIteration(xl: xl!, xu: xu!, iter: iter!, fun: fun)
                 }
                 self.performSegue(withIdentifier: "goToResult", sender: self)
                 poly.setReset()

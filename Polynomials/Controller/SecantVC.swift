@@ -85,11 +85,11 @@ class SecantVC: UIViewController {
         if let fun = fxTextField.text {
             if xo != nil && xMinus != nil{
                 if eps != nil {
-                    poly.secant(xo: xo!, xMinus: xMinus!, eps: eps!, fun: " \(fun)")
+                    poly.secant(xo: xo!, xMinus: xMinus!, eps: eps!, fun: fun)
                     self.performSegue(withIdentifier: "goToResult", sender: self)
                     poly.setReset()
                 }else if iter != nil{
-                    poly.secantWithIter(xo: xo!, xMinus: xMinus!, iter: iter!, fun: " \(fun) ")
+                    poly.secantWithIter(xo: xo!, xMinus: xMinus!, iter: iter!, fun: fun)
                     self.performSegue(withIdentifier: "goToResult", sender: self)
                     poly.setReset()
                 }

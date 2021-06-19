@@ -84,11 +84,11 @@ class SimpleFixedPointVC: UIViewController {
         if let fun = fxTextField.text {
             if xo != nil {
                 if eps != nil {
-                    poly.simpleFixedPoint(x: xo!, eps: eps!, fun: " \(fun) ")
+                    poly.simpleFixedPoint(x: xo!, eps: eps!, fun: fun)
                     self.performSegue(withIdentifier: "goToResult", sender: self)
                     poly.setReset()
                 }else if iter != nil{
-                    poly.simpleFixedPointWithIter(x: xo!, iter: iter!, fun: " \(fun) ")
+                    poly.simpleFixedPointWithIter(x: xo!, iter: iter!, fun: fun)
                     self.performSegue(withIdentifier: "goToResult", sender: self)
                     poly.setReset()
                 }

@@ -41,7 +41,7 @@
 		01E996E526672886009FDAF1 /* LUVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUVC.swift; sourceTree = "<group>"; };
 		01F1C43D264CE4A600A65094 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		01F1C43F264CE83F00A65094 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		01FADFDF2642BBE20087F358 /* PolynomialsAndMatrix & Matrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PolynomialsAndMatrix & Matrix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01FADFDF2642BBE20087F358 /* Polynomials & Matrix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Polynomials & Matrix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FADFE22642BBE20087F358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01FADFE42642BBE20087F358 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01FADFE62642BBE20087F358 /* BisectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BisectionVC.swift; path = ../BisectionVC.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		01FADFE02642BBE20087F358 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01FADFDF2642BBE20087F358 /* PolynomialsAndMatrix & Matrix.app */,
+				01FADFDF2642BBE20087F358 /* Polynomials & Matrix.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +147,7 @@
 			);
 			name = PolynomialsAndMatrix;
 			productName = Polynomials;
-			productReference = 01FADFDF2642BBE20087F358 /* PolynomialsAndMatrix & Matrix.app */;
+			productReference = 01FADFDF2642BBE20087F358 /* Polynomials & Matrix.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -369,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.khater.Polynomials;
-				PRODUCT_NAME = "PolynomialsAndMatrix & Matrix";
+				PRODUCT_NAME = "Polynomials & Matrix";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,7 +389,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.khater.Polynomials;
-				PRODUCT_NAME = "PolynomialsAndMatrix & Matrix";
+				PRODUCT_NAME = "Polynomials & Matrix";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

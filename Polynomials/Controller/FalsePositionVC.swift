@@ -95,9 +95,9 @@ class FalsePositionVC: UIViewController {
         if let fun = functionTextField.text {
             if poly.check(fun: fun, xl: xl, xu: xu, iter: iter, eps: eps){
                 if eps != nil{
-                    poly.falsePosition(xl: xl!, xu: xu!, eps: eps!, fun: " \(fun) ")
+                    poly.falsePosition(xl: xl!, xu: xu!, eps: eps!, fun: fun)
                 }else{
-                    poly.falsePositionIteration(xl: xl!, xu: xu!, iter: iter!, fun: " \(fun) ")
+                    poly.falsePositionIteration(xl: xl!, xu: xu!, iter: iter!, fun: fun)
                 }
                 self.performSegue(withIdentifier: "goToResult", sender: self)
                 poly.setReset()

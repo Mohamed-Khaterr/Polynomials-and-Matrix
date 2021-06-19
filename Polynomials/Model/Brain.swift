@@ -40,7 +40,7 @@ class Polynomials{
 
     func f(x: Double, string: String) -> Double{
         var converted:String = ""
-        var char = Array(string)
+        var char = Array(" \(string) ")
         var i = 0
         var temp = ""
         var pow = [String]()
