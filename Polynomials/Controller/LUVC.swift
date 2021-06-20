@@ -70,6 +70,43 @@ class LUVC: UIViewController {
             self.performSegue(withIdentifier: "goToResult", sender: self)
             matrix.setReset()
         }
+        
+        if a11 == nil {
+            a11TextField.wiggleTheButton()
+        }
+        if a12 == nil {
+            a12TextField.wiggleTheButton()
+        }
+        if a13 == nil {
+            a13TextField.wiggleTheButton()
+        }
+        if a14 == nil {
+            a14TextField.wiggleTheButton()
+        }
+        if a21 == nil {
+            a21TextField.wiggleTheButton()
+        }
+        if a22 == nil {
+            a22TextField.wiggleTheButton()
+        }
+        if a23 == nil {
+            a23TextField.wiggleTheButton()
+        }
+        if a24 == nil {
+            a24TextField.wiggleTheButton()
+        }
+        if a31 == nil {
+            a31TextField.wiggleTheButton()
+        }
+        if a32 == nil {
+            a32TextField.wiggleTheButton()
+        }
+        if a33 == nil {
+            a33TextField.wiggleTheButton()
+        }
+        if a34 == nil {
+            a34TextField.wiggleTheButton()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

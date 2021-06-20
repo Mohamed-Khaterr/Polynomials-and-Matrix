@@ -41,11 +41,6 @@ class FalsePositionVC: UIViewController {
         multiplicationButton.cornerByThree()
         bigXButton.cornerByThree()
         
-        //This to Add dot to number pad
-        functionTextField.keyboardType = .decimalPad
-        xlTextField.keyboardType = .decimalPad
-        xuTextField.keyboardType = .decimalPad
-        epsTextField.keyboardType = .decimalPad
     }
     
     
