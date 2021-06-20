@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		01FADFDE2642BBE20087F358 /* PolynomialsAndMatrix */ = {
+		01FADFDE2642BBE20087F358 /* Polynomials & Matrix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01FADFF32642BBE40087F358 /* Build configuration list for PBXNativeTarget "PolynomialsAndMatrix" */;
+			buildConfigurationList = 01FADFF32642BBE40087F358 /* Build configuration list for PBXNativeTarget "Polynomials & Matrix" */;
 			buildPhases = (
 				01FADFDB2642BBE20087F358 /* Sources */,
 				01FADFDC2642BBE20087F358 /* Frameworks */,
@@ -145,7 +145,7 @@
 			);
 			dependencies = (
 			);
-			name = PolynomialsAndMatrix;
+			name = "Polynomials & Matrix";
 			productName = Polynomials;
 			productReference = 01FADFDF2642BBE20087F358 /* Polynomials & Matrix.app */;
 			productType = "com.apple.product-type.application";
@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 01FADFDA2642BBE20087F358 /* Build configuration list for PBXProject "PolynomialsAndMatrix" */;
+			buildConfigurationList = 01FADFDA2642BBE20087F358 /* Build configuration list for PBXProject "Polynomials & Matrix" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -178,7 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				01FADFDE2642BBE20087F358 /* PolynomialsAndMatrix */,
+				01FADFDE2642BBE20087F358 /* Polynomials & Matrix */,
 			);
 		};
 /* End PBXProject section */
@@ -399,7 +399,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01FADFDA2642BBE20087F358 /* Build configuration list for PBXProject "PolynomialsAndMatrix" */ = {
+		01FADFDA2642BBE20087F358 /* Build configuration list for PBXProject "Polynomials & Matrix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01FADFF12642BBE40087F358 /* Debug */,
@@ -408,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01FADFF32642BBE40087F358 /* Build configuration list for PBXNativeTarget "PolynomialsAndMatrix" */ = {
+		01FADFF32642BBE40087F358 /* Build configuration list for PBXNativeTarget "Polynomials & Matrix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01FADFF42642BBE40087F358 /* Debug */,

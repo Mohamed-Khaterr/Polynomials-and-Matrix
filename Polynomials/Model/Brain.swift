@@ -123,6 +123,8 @@ class Polynomials{
         return value ?? 0.0
     }
     
+    //MARK: - Bisection Method
+    
     func bisection(xl: Double, xu: Double, eps: Double, fun: String){
         var xL = xl
         var xU = xu
@@ -183,6 +185,8 @@ class Polynomials{
         }while counter != iter + 1
 
     }
+    
+    //MARK: - False Position Method
     
     func falsePosition(xl: Double, xu: Double, eps: Double, fun: String){
         var xL = xl
@@ -245,6 +249,8 @@ class Polynomials{
         
     }
     
+    //MARK: - Simple Fixed Point Method
+    
     func simpleFixedPoint(x: Double, eps: Double, fun: String){
         var square = fun
         
@@ -295,6 +301,8 @@ class Polynomials{
         }
     }
     
+    //MARK: - Newton Method
+    
     func newton(x: Double, eps: Double, funDash: String, fun: String){
         
         xPlus = x - (f(x: x, string: fun)/f(x: x, string: funDash))
@@ -336,6 +344,8 @@ class Polynomials{
              newtonWithIter(x: xPlus, iter: iter, funDash: funDash, fun: fun)
         }
     }
+    
+    //MARK: - Secant Method
     
     func secant(xo: Double,xMinus: Double, eps: Double, fun: String){
         var x1 = xo
