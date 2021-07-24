@@ -102,7 +102,7 @@ class FalsePositionVC: UIViewController {
                     poly.falsePositionIteration(xl: xl!, xu: xu!, iter: iter!, fun: fun)
                 }
                 
-                self.performSegue(withIdentifier: "goToResult", sender: self)
+                self.performSegue(withIdentifier: Constant.result, sender: self)
                 poly.setReset()
                 
             }else{
@@ -138,7 +138,7 @@ class FalsePositionVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToResult"{
+        if segue.identifier == Constant.result{
             let destinationVC = segue.destination as! ResultViewController
             destinationVC.result += poly.getResult()
         }

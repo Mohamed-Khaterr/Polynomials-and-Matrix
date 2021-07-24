@@ -68,7 +68,7 @@ class GaussVc: UIViewController {
             
             matrix.gauss(a11: a11!, a12: a12!, a13: a13!, a14: a14!, a21: a21!, a22: a22!, a23: a23!, a24: a24!, a31: a31!, a32: a32!, a33: a33!, a34: a34!)
             
-            self.performSegue(withIdentifier: "goToResult", sender: self)
+            self.performSegue(withIdentifier: Constant.result, sender: self)
             matrix.setReset()
             
         }
@@ -114,7 +114,7 @@ class GaussVc: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToResult"{
+        if segue.identifier == Constant.result{
             let destinationVC = segue.destination as! ResultViewController
             destinationVC.result += matrix.getResult()
         }

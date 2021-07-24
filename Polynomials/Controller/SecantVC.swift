@@ -90,13 +90,13 @@ class SecantVC: UIViewController {
                     
                     poly.secant(xo: xo!, xMinus: xMinus!, eps: eps!, fun: fun)
                     
-                    self.performSegue(withIdentifier: "goToResult", sender: self)
+                    self.performSegue(withIdentifier: Constant.result, sender: self)
                     poly.setReset()
                     
                 }else if iter != nil{
                     
                     poly.secantWithIter(xo: xo!, xMinus: xMinus!, iter: iter!, fun: fun)
-                    self.performSegue(withIdentifier: "goToResult", sender: self)
+                    self.performSegue(withIdentifier: Constant.result, sender: self)
                     poly.setReset()
                 }
             }
@@ -133,7 +133,7 @@ class SecantVC: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToResult"{
+        if segue.identifier == Constant.result{
             let destinationVC = segue.destination as! ResultViewController
             destinationVC.result += poly.getResult()
         }

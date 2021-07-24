@@ -101,7 +101,7 @@ class BisectionVC: UIViewController {
                     
                 }
                 
-                self.performSegue(withIdentifier: "goToResult", sender: self)
+                self.performSegue(withIdentifier: Constant.result, sender: self)
                 poly.setReset()
                 
             }else{
@@ -135,7 +135,7 @@ class BisectionVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToResult"{
+        if segue.identifier == Constant.result{
             let destinationVC = segue.destination as! ResultViewController
             destinationVC.result += poly.getResult()
         }

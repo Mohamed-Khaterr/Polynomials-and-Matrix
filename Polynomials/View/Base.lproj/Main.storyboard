@@ -141,6 +141,7 @@
                         <outlet property="newtonButton" destination="uzw-Tj-ssA" id="1RC-h8-AGd"/>
                         <outlet property="secantButton" destination="Fbl-Ya-Bo1" id="Hxd-KA-F5b"/>
                         <outlet property="simpleFixedButton" destination="fTu-OE-6cG" id="tQC-re-gdb"/>
+                        <outlet property="welcomeLable" destination="1sD-sr-FyM" id="e7b-Uc-mhP"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToBisection" id="wpQ-vs-0Pe"/>
                         <segue destination="8cM-h0-HGU" kind="presentation" identifier="goToFalsePosition" id="4vx-8K-vvh"/>
                         <segue destination="HHy-Hr-1d3" kind="presentation" identifier="goToSimple" id="GxQ-fz-uYz"/>
@@ -239,6 +240,7 @@
                         <outlet property="cramerButton" destination="jJ9-EZ-XRV" id="ZYb-6K-JSL"/>
                         <outlet property="gaussButton" destination="KYX-xJ-eLJ" id="aUv-vQ-Jcb"/>
                         <outlet property="luButton" destination="bnp-Gi-EV7" id="Lct-iF-3rd"/>
+                        <outlet property="welcomeLabel" destination="8V5-fr-LZL" id="I34-ou-gol"/>
                         <segue destination="Emz-PF-ltE" kind="presentation" identifier="goToGauss" id="muP-0d-PaX"/>
                         <segue destination="paD-jh-tlP" kind="presentation" identifier="goToLU" id="qP4-6l-RdL"/>
                         <segue destination="NjH-qM-AOc" kind="presentation" identifier="goToCramer" id="RXQ-4L-IwA"/>
@@ -781,8 +783,8 @@
                                                     <action selector="backButtonPressed:" destination="RgR-Vc-Jyj" eventType="touchUpInside" id="b0v-BH-070"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxU-Lp-ow1">
-                                                <rect key="frame" x="0.0" y="65" width="414" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxU-Lp-ow1">
+                                                <rect key="frame" x="20" y="65" width="394" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -790,8 +792,8 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="bcf-ev-4Sh" firstAttribute="top" secondItem="QcF-lT-fUl" secondAttribute="top" constant="12" id="DaT-RR-MPA"/>
+                                            <constraint firstItem="IxU-Lp-ow1" firstAttribute="leading" secondItem="QcF-lT-fUl" secondAttribute="leading" constant="20" id="FjU-j8-JTO"/>
                                             <constraint firstAttribute="height" priority="250" constant="1200" id="IrB-fh-Js5"/>
-                                            <constraint firstItem="IxU-Lp-ow1" firstAttribute="leading" secondItem="QcF-lT-fUl" secondAttribute="leading" id="JDe-lR-4r4"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bcf-ev-4Sh" secondAttribute="trailing" constant="20" symbolic="YES" id="WqK-Bz-QIC"/>
                                             <constraint firstAttribute="bottom" secondItem="IxU-Lp-ow1" secondAttribute="bottom" id="eOW-fk-z1I"/>
                                             <constraint firstItem="IxU-Lp-ow1" firstAttribute="top" secondItem="bcf-ev-4Sh" secondAttribute="bottom" constant="8" id="g1H-Wv-q44"/>

@@ -276,6 +276,8 @@ class Polynomials{
         }
     }
     
+    var resultArray: [String] = []
+    
     func simpleFixedPointWithIter(x: Double, iter: Int, fun: String){
         var square = fun
         
@@ -295,6 +297,7 @@ class Polynomials{
         result += "-------------------------------\n"
         
         counter += 1
+        resultArray.append(result)
         
         if counter <= iter{
             simpleFixedPointWithIter(x: xPlus, iter: iter, fun: fun)
@@ -401,6 +404,9 @@ class Polynomials{
     func setReset(){
         result = ""
         counter = 0
+    }
+    func getArray()-> [String]{
+        return resultArray
     }
 }
 

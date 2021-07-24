@@ -9,6 +9,7 @@
 import UIKit
 
 class MainVC: UIViewController {
+    @IBOutlet weak var welcomeLable: UILabel!
     @IBOutlet weak var bisectionButton: UIButton!
     @IBOutlet weak var falesButton: UIButton!
     @IBOutlet weak var simpleFixedButton: UIButton!
@@ -18,6 +19,16 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        welcomeLable.text = ""
+        var character = 0.0
+        let title = "Welcome"
+        for element in title{
+            Timer.scheduledTimer(withTimeInterval: 0.1 * character, repeats: false) { (timer) in
+                self.welcomeLable.text?.append(element)
+            }
+            character += 1
+        }
 
         //make buttons with corners
         bisectionButton.cornerByTwo()
@@ -30,32 +41,32 @@ class MainVC: UIViewController {
     }
     
     @IBAction func bisectionPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "goToBisection", sender: self)
+        self.performSegue(withIdentifier: Constant.bisection, sender: self)
     }
     
     @IBAction func falsePositinPressed(_ sender: UIButton) {
         //goToFalsePosition
-        self.performSegue(withIdentifier: "goToFalsePosition", sender: self)
+        self.performSegue(withIdentifier: Constant.falsePosition, sender: self)
     }
     
     @IBAction func simpleFixedPointPressed(_ sender: UIButton) {
         //goToSimple
-        self.performSegue(withIdentifier: "goToSimple", sender: self)
+        self.performSegue(withIdentifier: Constant.simple, sender: self)
     }
     
     @IBAction func newtonPressed(_ sender: UIButton) {
         //goToNewton
-        self.performSegue(withIdentifier: "goToNewton", sender: self)
+        self.performSegue(withIdentifier: Constant.newton, sender: self)
     }
     
     @IBAction func secantPressed(_ sender: UIButton) {
         //goToSecant
-        self.performSegue(withIdentifier: "goToSecant", sender: self)
+        self.performSegue(withIdentifier: Constant.secant, sender: self)
     }
     
     @IBAction func matrixPressed(_ sender: UIButton) {
         //goToMatrix
-        self.performSegue(withIdentifier: "goToMatrix", sender: self)
+        self.performSegue(withIdentifier: Constant.matrix, sender: self)
     }
     
     /*

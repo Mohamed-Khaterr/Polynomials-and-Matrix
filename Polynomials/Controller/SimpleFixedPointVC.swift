@@ -89,14 +89,14 @@ class SimpleFixedPointVC: UIViewController {
                     
                     poly.simpleFixedPoint(x: xo!, eps: eps!, fun: fun)
                     
-                    self.performSegue(withIdentifier: "goToResult", sender: self)
+                    self.performSegue(withIdentifier: Constant.result, sender: self)
                     poly.setReset()
                     
                 }else if iter != nil{
                     
                     poly.simpleFixedPointWithIter(x: xo!, iter: iter!, fun: fun)
                     
-                    self.performSegue(withIdentifier: "goToResult", sender: self)
+                    self.performSegue(withIdentifier: Constant.result, sender: self)
                     poly.setReset()
                     
                 }
@@ -126,7 +126,7 @@ class SimpleFixedPointVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToResult"{
+        if segue.identifier == Constant.result{
             let destinationVC = segue.destination as! ResultViewController
             destinationVC.result += poly.getResult()
         }

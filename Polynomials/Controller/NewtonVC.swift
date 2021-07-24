@@ -92,14 +92,14 @@ class NewtonVC: UIViewController {
                         
                         poly.newton(x: xo!, eps: eps!, funDash: fDash, fun: fun)
                         
-                        self.performSegue(withIdentifier: "goToResult", sender: self)
+                        self.performSegue(withIdentifier: Constant.result, sender: self)
                         poly.setReset()
                         
                     }else if iter != nil{
                         
                         poly.newtonWithIter(x: xo!, iter: iter!, funDash: fDash, fun: fun)
                         
-                        self.performSegue(withIdentifier: "goToResult", sender: self)
+                        self.performSegue(withIdentifier: Constant.result, sender: self)
                         poly.setReset()
                     }
                 }
@@ -128,7 +128,7 @@ class NewtonVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToResult"{
+        if segue.identifier == Constant.result{
             let destinationVC = segue.destination as! ResultViewController
             destinationVC.result += poly.getResult()
         }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0140B3AA26AACC87001F231D /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140B3A826AACC87001F231D /* ResultCell.swift */; };
+		0140B3AB26AACC87001F231D /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0140B3A926AACC87001F231D /* ResultCell.xib */; };
 		017DD3E02665612100281A8F /* NewtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017DD3DF2665612100281A8F /* NewtonVC.swift */; };
 		01BC0B9526645C5800B46841 /* FalsePositionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC0B9426645C5800B46841 /* FalsePositionVC.swift */; };
 		01BC0B9726645DBB00B46841 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BC0B9626645DBB00B46841 /* MainVC.swift */; };
@@ -26,9 +28,12 @@
 		01FADFEC2642BBE40087F358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01FADFEB2642BBE40087F358 /* Assets.xcassets */; };
 		01FADFEF2642BBE40087F358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FADFED2642BBE40087F358 /* LaunchScreen.storyboard */; };
 		01FADFFA2642CBBB0087F358 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FADFF92642CBBB0087F358 /* Brain.swift */; };
+		01FEDA0426ABAE9C00158265 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FEDA0326ABAE9C00158265 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0140B3A826AACC87001F231D /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		0140B3A926AACC87001F231D /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
 		017DD3DF2665612100281A8F /* NewtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtonVC.swift; sourceTree = "<group>"; };
 		01BC0B9426645C5800B46841 /* FalsePositionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalsePositionVC.swift; sourceTree = "<group>"; };
 		01BC0B9626645DBB00B46841 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		01FADFEE2642BBE40087F358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01FADFF02642BBE40087F358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01FADFF92642CBBB0087F358 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		01FEDA0326ABAE9C00158265 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 				01FADFF72642BC2D0087F358 /* Controller */,
 				01FADFEB2642BBE40087F358 /* Assets.xcassets */,
 				01FADFF02642BBE40087F358 /* Info.plist */,
+				01FEDA0326ABAE9C00158265 /* Constants.swift */,
 			);
 			path = Polynomials;
 			sourceTree = "<group>";
@@ -98,6 +105,8 @@
 			children = (
 				01FADFE82642BBE20087F358 /* Main.storyboard */,
 				01FADFED2642BBE40087F358 /* LaunchScreen.storyboard */,
+				0140B3A826AACC87001F231D /* ResultCell.swift */,
+				0140B3A926AACC87001F231D /* ResultCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,11 +120,11 @@
 				01BC0B98266466A700B46841 /* SimpleFixedPointVC.swift */,
 				017DD3DF2665612100281A8F /* NewtonVC.swift */,
 				01E996DD2666CB2A009FDAF1 /* SecantVC.swift */,
-				01F1C43F264CE83F00A65094 /* ResultViewController.swift */,
 				01E996DF2666FC79009FDAF1 /* MatrixVC.swift */,
 				01E996E326671CFD009FDAF1 /* GaussVc.swift */,
 				01E996E526672886009FDAF1 /* LUVC.swift */,
 				01E58B17266774D5007C9129 /* CramerVC.swift */,
+				01F1C43F264CE83F00A65094 /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +199,7 @@
 			files = (
 				01FADFEF2642BBE40087F358 /* LaunchScreen.storyboard in Resources */,
 				01FADFEC2642BBE40087F358 /* Assets.xcassets in Resources */,
+				0140B3AB26AACC87001F231D /* ResultCell.xib in Resources */,
 				01FADFEA2642BBE20087F358 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,9 +224,11 @@
 				01FADFE52642BBE20087F358 /* SceneDelegate.swift in Sources */,
 				017DD3E02665612100281A8F /* NewtonVC.swift in Sources */,
 				01E58B18266774D5007C9129 /* CramerVC.swift in Sources */,
+				0140B3AA26AACC87001F231D /* ResultCell.swift in Sources */,
 				01BC0B99266466A700B46841 /* SimpleFixedPointVC.swift in Sources */,
 				01F1C440264CE83F00A65094 /* ResultViewController.swift in Sources */,
 				01E996E02666FC79009FDAF1 /* MatrixVC.swift in Sources */,
+				01FEDA0426ABAE9C00158265 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
