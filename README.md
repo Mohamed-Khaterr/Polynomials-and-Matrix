@@ -10,7 +10,8 @@ This App to calculate Root of Polynomials and Matrix
     1. Gauss Elimination
     2. LU Decomposition
     3. Cramer's Rule
-    
+
+[![ezgif.com-gif-maker36880a8e18c8719a.gif](https://s6.gifyu.com/images/ezgif.com-gif-maker36880a8e18c8719a.gif)](https://gifyu.com/image/OxYO)
 ---
 ### Features
 - Dark Mode
