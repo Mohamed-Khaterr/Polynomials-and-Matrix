@@ -405,8 +405,5 @@ class Polynomials{
         result = ""
         counter = 0
     }
-    func getArray()-> [String]{
-        return resultArray
-    }
 }
 
